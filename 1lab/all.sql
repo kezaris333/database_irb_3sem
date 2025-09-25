@@ -76,7 +76,6 @@ location varchar (300) CHECK (location ~ '^/\d+/\d+/\d+$')
  book_id int,
  foreign key (book_id) references public.book (book_id),
  min_condition state_type not null,
- date_reservation date not null,
  time_reservation timestamp(0) not null -- (0) точность, у нас до секунд
  );
  
